@@ -1,0 +1,1 @@
+<footer class="pt-3 mt-4 text-body-secondary border-top"> &copy; Project YumYum - 2024 final project </footer>

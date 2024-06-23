@@ -1,0 +1,15 @@
+DROP TABLE scrap;
+
+CREATE TABLE IF NOT EXISTS scrap(
+   r_id VARCHAR(10) NOT NULL,
+   r_name VARCHAR(20),
+   m_id VARCHAR(20) NOT NULL,
+   FOREIGN KEY (r_id) REFERENCES restaurant(r_id) ON DELETE CASCADE,
+   FOREIGN KEY (m_id) REFERENCES member(id) ON DELETE CASCADE
+) DEFAULT CHARSET=utf8;
+
+SELECT * FROM scrap;
+
+DESC scrap;
+
+TRUNCATE TABLE scrap;
